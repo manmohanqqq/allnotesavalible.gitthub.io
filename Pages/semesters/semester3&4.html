@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester 3&4</title>
+  <link rel="stylesheet" href="../Components/footer.css">
+  <link rel="stylesheet" href="../Components/nav.css">
+  <style>
+    * {
+      padding: 0px 0px;
+      margin: 0px 0px;
+    }
+
+    body {
+      background-color: rgb(46, 46, 46);
+    }
+    /* heading  */
+    #main_heading{
+      background: rgb(254, 186, 255);
+      padding-bottom: 10px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 65px;
+      font-weight:bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    @media only screen and (max-width:750px) {
+      #main_heading {
+                font-size: 30px;
+            }
+        }
+
+
+    #card_container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 90%;
+      margin: auto;
+      justify-content: space-around;
+    }
+
+    /* card  */
+    .card {
+      margin: 15px 10px;
+      min-width: 300px;
+      width: 30%;
+      border-radius: 20px;
+      padding: 5px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    }
+
+    .card__content {
+      background: rgb(5, 6, 45);
+      border-radius: 17px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card_img {
+      width: 90%;
+      margin: auto;
+      padding-top: 15px;
+    }
+
+    .card_img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card__content_text {
+      display: block;
+      margin: 15px 15px;
+      color: #5dc6ff;
+      font-size: 1.2rem;
+      /* height: 50px; */
+    }
+    .btn_holder{
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
+    }
+    /* card button  */
+    .btn_holder a{
+      text-decoration: none;
+    }
+    .cssbuttons-io-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 0.6em 1.5em 0.6em 1.2em;
+      color: white;
+      background: #ad5389;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(77, 54, 208, 1)), to(rgba(132, 116, 254, 1)));
+      background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+      border: none;
+      -webkit-box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+      box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+      letter-spacing: 0.05em;
+      border-radius: 20em;
+    }
+
+    .cssbuttons-io-button svg {
+      margin-right: 8px;
+    }
+
+    .cssbuttons-io-button:hover {
+      -webkit-box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+      box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+      cursor: pointer;
+    }
+
+    .cssbuttons-io-button:active {
+      -webkit-box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+      box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav bar  -->
+  <script src="../Components/nav.js"></script>
+  <!-- heading -->
+  <h1 id="main_heading">
+    Semester-3&4
+  </h1>
+  <!-- books container  -->
+  <div id="card_container">
+  </div>
+  
+  <script>
+    // for quantums 
+    let quantums = ["Computer Organization Architecture","Computer System Security","Data Structure","Digital Electronics","Discrete Structures & Theory of Logic","Maths 4","Microprocessor","Operating System","Sensors & Transducers","Technical Communication","Soft Skills 1","Theory of Automata and Formal Languages","Universal Human Values & Professional Ethics"];
+
+    for (let i=0; i < quantums.length; i++) {
+      let card = `<div class="card">
+      <div class="card__content">
+        <div class="card_img">
+          <img src="../../content/images/quantum.jpg" alt="quantum image" srcset="">
+        </div>
+        <span class="card__content_text">${quantums[i]}</span>
+        <div class="btn_holder">
+          <a href="../../content/pdfbooks/Semester/Sem 3&4/${quantums[i]}.pdf" target="blank">
+          <button class="cssbuttons-io-button">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+              d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
+              fill="currentColor"></path>
+            </svg>
+            <span>Download</span>
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>`;
+      document.getElementById("card_container").innerHTML += card; 
+    }
+
+    // for notes
+    let notes = ["Notes COA Unit 1","Notes CSS Computer Security","Notes CSS Control Hijacking","Notes CSS Email Security","Notes CSS Rootkits","Notes CSS Security Architecture Models","Notes CSS Unit 1-5","Notes CSS Unit 3 Access Control","Notes CSS Unit 4 Part 1","Notes CSS Unit 4 Part 2","Notes CSS Unit 5","Notes DSTL Graph Theory","Notes DSTL Predicate Logic","Notes DSTL Recurrence Relation","Notes DSTL Set Inclusion","Notes DSTL Set Proves","Notes DSTL Unit 1-5","Notes DSTL Unit 4","Notes DSTL Unit 5","Notes DSTL Unit 4 Logic Implementataion","Question Bank Maths 4 Unit 2","Question Bank Maths 4 Unit 3","Question Bank Maths 4 Unit 4","Question Bank Maths 4 Unit 5","NOTES COA UNIT-1 Introduction and Bus","NOTES COA UNIT-1 Numericals","NOTES COA UNIT-1 Register Transfer Language","NOTES COA UNIT-2 Carry Look Ahead Adder","NOTES COA UNIT-2 Division Algorithms","NOTES COA UNIT-2 Multiplication and Division Algos","NOTES COA UNIT-3 Control Unit","NOTES COA UNIT-3 Microoprogrammed Control Unit","NOTES COA UNIT-3 Pipelining","NOTES COA UNIT-3 RISC CISC","NOTES DS UNIT 1","NOTES DS UNIT 2","NOTES DS UNIT 5","NOTES MP UNIT 1& 2","NOTES MP UNIT-3 8086 Addressing Modes","NOTES MP UNIT-3 8086 Architecture","NOTES MP UNIT-3 8086 Interrupts","NOTES MP UNIT-4","NOTES MP UNIT-5 8251 USART, RS 232 INTERFACE","NOTES MP UNIT-5 8255 PPI, 8253 PIT","NOTES MP UNIT-5 8259 PIC","NOTES MP UNIT-5 DMA, OPERATION, 8237 DMA CONTROLLER","NOTES TC UNIT-1","NOTES TC UNIT-3","NOTES TC UNIT-5","Question Bank MP PART 1 UNIT 1 and 2","Question Bank MP PART 2 UNIT 1 and 2","Question Bank MP Unit 3 and 4","Question Bank MP UNIT 5"];
+
+    for (let i=0; i < notes.length; i++) {
+      let card = `<div class="card">
+      <div class="card__content">
+        <div class="card_img">
+          <img src="../../content/images/notes.jpg" alt="Notes image" srcset="">
+        </div>
+        <span class="card__content_text">${notes[i]}</span>
+        <div class="btn_holder">
+          <a href="../../content/pdfbooks/Semester/Sem 3&4 notes/${notes[i]}.pdf" target="blank">
+          <button class="cssbuttons-io-button">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+              d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
+              fill="currentColor"></path>
+            </svg>
+            <span>Download</span>
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>`;
+      document.getElementById("card_container").innerHTML += card;
+  }
+  </script>
+  <script src="../Components/footer.js"></script>
+</body>
+
+</html>
