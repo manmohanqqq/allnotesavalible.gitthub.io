@@ -1,1 +1,1 @@
-https://singular-mermaid-0b0d1d.netlify.app/
+https://manmohanqqq.github.io/allnotesavalible.gitthub.io/)https://manmohanqqq.github.io/allnotesavalible.gitthub.io/
