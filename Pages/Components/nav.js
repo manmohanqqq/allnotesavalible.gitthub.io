@@ -7,7 +7,10 @@ footer.innerHTML =`<nav>
 </div>
 
 <ul class="links">
-    <li><a href="https://www.instagram.com/thakur_manmohan_singh_5072">Developer</a></li>
+    <li><a href="https://lastminutepdf.netlify.app/pages/home">home</a></li>
+    <li><a href="https://lastminutepdf.netlify.app/pages/pbooks">programming books</a></li>
+    <li><a href="https://lastminutepdf.netlify.app/pages/developers">developer</a></li>
+    
 </ul>
 
 
